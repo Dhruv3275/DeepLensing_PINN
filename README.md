@@ -1,4 +1,4 @@
-# Physics Guided Machine Learning on Real Lensing Images Using Resnet-18 ad Resnet-10 and Physics Informed Nueral Network (PINN)
+# Physics Guided Machine Learning on Real Lensing Images Using Resnet-18, Resnet-10 and Physics Informed Neural Network (PINN)
 ## Overview
 
 This repository contains the implementation of two models for classifying images of gravitational lenses using PyTorch. The first model employs a standard ResNet-18 architecture, while the second model enhances the ResNet-18 with a physics-informed neural network (PINN) that incorporates the gravitational lensing equation.
@@ -16,7 +16,7 @@ The dataset which was given to us was in .npy format for both train and validati
 ### Notebook
 
 You can find the conversion notebook in the following Jupyter notebook:
-([Conversion of Data](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/Conversion%20of%20Data.pdf))
+[Conversion of Data](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/Conversion%20of%20Data.ipynb)
 
 ### Approach-1
 
@@ -32,7 +32,7 @@ The model achieved an ROC-AUC score of 0.99 on the test data.
 
 ### Notebook
 
-You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-18 Approach](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2018%20Approach%20Classification.pdf)
+You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-18 Approach](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2018%20Approach%20Classification.ipynb)
 
 ### Approach-2
 
@@ -49,7 +49,7 @@ The model achieved an ROC-AUC score of 0.99 on the test data.
 ### Notebook
 
 You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-10 Approach]
-([ResNet 10 Approach Classification.pdf](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2010%20Approach%20Classification.pdf))
+[ResNet 10 Approach Classification.pdf](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2010%20Approach%20Classification.ipynb)
 
 ## Specific Test V: Physics-Guided ML
 
@@ -64,7 +64,7 @@ The dataset which was given to us was in .npy format for both train and validati
 ### Notebook
 
 You can find the conversion notebook in the following Jupyter notebook:
-([Conversion of Data](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/Conversion%20of%20Data.pdf))
+[Conversion of Data](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/Conversion%20of%20Data.ipynb)
 
 
 ### Approach 1
@@ -92,7 +92,8 @@ The model achieved an ROC-AUC score of 0.97 on the test data.
 
 ### Notebook
 
-You can find the detailed implementation and results of this approach in the following Jupyter notebook: [PINN Approach 1](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2018%20Approach%20PINNs.pdf)
+You can find the detailed implementation and results of this approach in the following Jupyter notebook: 
+[PINN Approach 1](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2018%20Approach%20PINNs.ipynb)
 
 ---
 
