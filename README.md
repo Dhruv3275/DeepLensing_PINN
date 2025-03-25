@@ -84,7 +84,7 @@ For classifying gravitational lenses into three types (no lensing, vortex, and h
 
 ### Results
 
-The model achieved an ROC-AUC score of 0.92 on the test data.
+The model achieved an ROC-AUC score of 0.97 on the test data.
 
 
 <img src="ROC-AUC Curves/PINNs/ResNet 18.png" alt="ROC-AUC" width="400"/>
