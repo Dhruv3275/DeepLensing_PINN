@@ -9,6 +9,15 @@ This repository contains the implementation of two models for classifying images
 
 Build a model for classifying images into lenses using PyTorch or Keras. The model should be trained and validated using a suitable approach to achieve high accuracy.
 
+### Conversion
+
+The dataset which was given to us was in .npy format for both train and validation which if we tried to extract directly and used as our input and tried to run it resulted in getting not proper result so we first convert it into .png files,with the help of os and PIL and then with help of Transformers we were able to properly use it for our training purpose.
+
+### Notebook
+
+You can find the conversion notebook in the following Jupyter notebook:
+([Conversion of Data](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/Conversion%20of%20Data.pdf))
+
 ### Approach-1
 
 I utilized ResNet-18 for this task due to its ability to capture intricate patterns and features in the data, leading to better generalization and higher accuracy. The model was trained using 10-fold cross-validation, with each fold consisting of 3 epochs on a dataset of 30,000 training images and 7,500 test images.
@@ -18,12 +27,12 @@ I utilized ResNet-18 for this task due to its ability to capture intricate patte
 The model achieved an ROC-AUC score of 0.99 on the test data.
 
 
-<#img src="ROC-AUC Curve\ResNet18.png" alt="ROC-AUC" width="400"/>
+<img src="ROC-AUC Curves/Classification/ResNet 18.png" alt="ROC-AUC" width="400"/>
 
 
 ### Notebook
 
-You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-18 Approach]()
+You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-18 Approach](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2018%20Approach%20Classification.pdf)
 
 ### Approach-2
 
@@ -34,18 +43,29 @@ I utilized ResNet-10 for this task due to its ability to capture intricate patte
 The model achieved an ROC-AUC score of 0.99 on the test data.
 
 
-<#img src="ROC-AUC Curve\ResNet18.png" alt="ROC-AUC" width="400"/>
+<img src="ROC-AUC Curves/Classification/ResNet 10.png" alt="ROC-AUC" width="400"/>
 
 
 ### Notebook
 
-You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-10 Approach]()
+You can find the detailed implementation and results of this approach in the following Jupyter notebook: [ResNet-10 Approach]
+([ResNet 10 Approach Classification.pdf](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2010%20Approach%20Classification.pdf))
 
 ## Specific Test V: Physics-Guided ML
 
 ### Task
 
 Build a model for classifying images into lenses using PyTorch or Keras. The architecture should take the form of a physics-informed neural network (PINN) that incorporates the gravitational lensing equation to improve network performance over the common test results.
+
+### Conversion
+
+The dataset which was given to us was in .npy format for both train and validation which if we tried to extract directly and used as our input and tried to run it resulted in getting not proper result so we first convert it into .png files,with the help of os and PIL and then with help of Transformers we were able to properly use it for our training purpose.
+
+### Notebook
+
+You can find the conversion notebook in the following Jupyter notebook:
+([Conversion of Data](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/Conversion%20of%20Data.pdf))
+
 
 ### Approach 1
 
@@ -67,26 +87,12 @@ For classifying gravitational lenses into three types (no lensing, vortex, and h
 The model achieved an ROC-AUC score of 0.92 on the test data.
 
 
-<#img src="ROC-AUC Curve\approach_1.png" alt="ROC-AUC" width="400"/>
+<img src="ROC-AUC Curves/PINNs/ResNet 18.png" alt="ROC-AUC" width="400"/>
 
 
 ### Notebook
 
-You can find the detailed implementation and results of this approach in the following Jupyter notebook: [PINN Approach 1]()
-
-### Approach 2
-
-In this approach, the original image vector I represents θ. Another feature vector k from ResNet-18 is used as follows:
-C=I−B(features)⋅r^2
-A concatenated feature vector **D** is formed from another ResNet-18 feature vector A 
-features and C . This vector is then processed through three neural layers to classify the lenses.
-
-<#img src="ROC-AUC Curve\approach_1.png" alt="ROC-AUC" width="400"/>
-
-
-### Notebook
-
-You can find the detailed implementation and results of this approach in the following Jupyter notebook: [PINN Approach 2]()
+You can find the detailed implementation and results of this approach in the following Jupyter notebook: [PINN Approach 1](https://github.com/Dhruv3275/DeepLensing_PINN/blob/main/ResNet%2018%20Approach%20PINNs.pdf)
 
 ---
 
